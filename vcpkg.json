@@ -15,18 +15,5 @@
       ]
     },
     "fmt"
-  ],
-  "vcpkg-configuration": {
-    "default-registry": {
-      "kind": "git",
-      "baseline": "a0f974c66a1c56e974d37b5707e312742aead974",
-      "repository": "https://github.com/microsoft/vcpkg.git"
-    },
-    "overlay-ports": [
-      "./vcpkg/ports"
-    ],
-    "overlay-triplets": [
-      "./vcpkg/triplets"
-    ]
-  }
+  ]
 }

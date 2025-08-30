@@ -1,0 +1,25 @@
+bash-5.3$ git ls-files ::*CMakeLists.txt ::*.cmake ::*.json
+CMakeLists.txt
+src/CMakeLists.txt
+src/proto/CMakeLists.txt
+vcpkg.json
+vcpkg/BootstrapVcpkg.cmake
+vcpkg/ports/example-port/portfile.cmake
+vcpkg/ports/example-port/vcpkg.json
+vcpkg/triplets/arm64-macos-static-rel.cmake
+vcpkg/triplets/x64-linux-static-rel.cmake
+vcpkg/triplets/x64-windows-static-rel.cmake
+bash-5.3$
+
+mkdir -p vcpkg/triplets
+touch vcpkg/triplets/x64-osx-gcc15.cmake
+touch vcpkg-configuration.json
+
+export  CC=/usr/local/bin/gcc-15
+export CXX=/usr/local/bin/g++-15
+
+rm -rf ~/vcpkg/buildtrees
+rm -rf ~/vcpkg/packages
+
+~/vcpkg/vcpkg install --triplet x64-osx-gcc15
+

@@ -3,3 +3,4 @@
 
 # Miscellaneous build and testing folders
 build/
+vcpkg_installed/

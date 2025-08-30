@@ -3,7 +3,7 @@ find_package(Protobuf REQUIRED)
 
 add_library(proto-object OBJECT)
 
-target_sources(proto-object 
+target_sources(proto-object
   PRIVATE
     helloworld.proto
 )
@@ -11,9 +11,9 @@ target_include_directories(proto-object
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>
 )
-target_link_libraries(proto-object 
+target_link_libraries(proto-object
   PUBLIC
-    protobuf::libprotobuf 
+    protobuf::libprotobuf
     gRPC::grpc++
 )
 

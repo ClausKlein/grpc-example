@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.31...4.1)
 
 include(vcpkg/BootstrapVcpkg.cmake)
 
-project(grpc-example)
+project(grpc-example LANGUAGES CXX)
 
 add_executable(app)
 target_compile_features(app

@@ -10,3 +10,6 @@ This repo bootstraps vcpkg to provide gRPC if the option `-DBOOTSTRAP_VCPKG=ON`
 is passed to CMake during configuration. A local installation could be used via
 its associated toolchain file, or gRPC/protobuf could be provided via any other
 toolchain or `find_package()` discovery mechanism.
+
+see too https://grpc.io/docs/what-is-grpc/introduction/
+    and https://grpc.io/docs/languages/cpp/quickstart/

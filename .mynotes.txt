@@ -23,3 +23,5 @@ rm -rf ~/vcpkg/packages
 
 ~/vcpkg/vcpkg install --triplet x64-osx-gcc15
 
+cmake -S . -B build -D CMAKE_TOOLCHAIN_FILE=${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake
+

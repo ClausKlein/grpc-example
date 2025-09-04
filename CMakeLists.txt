@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31...4.1)
+cmake_minimum_required(VERSION 3.27...4.1)
 
 include(vcpkg/BootstrapVcpkg.cmake)
 
